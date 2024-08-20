@@ -1,5 +1,5 @@
-# Exno:1
-Data Cleaning Process
+# Exno:1 Data Cleaning and Outlier Detection & Removal
+
 
 # AIM
 To read the given data and perform data cleaning and save the cleaned data to a file.
@@ -8,17 +8,17 @@ To read the given data and perform data cleaning and save the cleaned data to a 
 Data cleaning is the process of preparing data for analysis by removing or modifying data that is incorrect ,incompleted , irrelevant , duplicated or improperly formatted. Data cleaning is not simply about erasing data ,but rather finding a way to maximize datasets accuracy without necessarily deleting the information.
 
 # Algorithm
-STEP 1: Read the given Data
+## STEP 1: Read the given Data
 
-STEP 2: Get the information about the data
+## STEP 2: Get the information about the data
 
-STEP 3: Remove the null values from the data
+## STEP 3: Remove the null values from the data
 
-STEP 4: Save the Clean data to the file
+## STEP 4: Save the Clean data to the file
 
-STEP 5: Remove outliers using IQR
+## STEP 5: Remove outliers using IQR
 
-STEP 6: Use zscore of to remove outliers
+## STEP 6: Use zscore of to remove outliers
 
 # Coding and Output
 # Data cleaning
@@ -77,7 +77,8 @@ ir.describe()
 import seaborn as sns
 sns.boxplot(x='sepal_width',data=ir)
 ```
-![image](https://github.com/user-attachments/assets/7ef2a3f4-ceca-4560-89e0-dfbb3eb23f92)
+![image](https://github.com/user-attachments/assets/1f52a30a-a88c-41a2-b0ff-f8ef2e9782fb)
+
 ```
 c1=ir.sepal_width.quantile(0.25)
 c3=ir.sepal_width.quantile(0.75)
